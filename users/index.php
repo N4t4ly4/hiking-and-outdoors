@@ -25,3 +25,4 @@ elseif($action == 'login'){
        header('Location: /Hiking-and-Trails/index.php');
    }
 }
+?>
