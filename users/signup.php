@@ -1,8 +1,15 @@
-<form action="../model/signup.php" method="post">
-  <label for="fname">Email:</label>
-  <input type="text" id="fname" name="fname" value=""><br>
-  <label for="pwd">Password:</label>
-  <input type="password" id="pwd" name="pwd"> 
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
+<?php
+session_start();
+require('../model/users_db.php');
+$action = filter_input(INPUT_POST, 'action');
+
+if($action == 'signup'){  
+   $email = filter_input(INPUT_POST,'email');
+   $password = filter_input(INPUT_POST,'password');
+    if ($email == NULL || $password == NULL) {
+        header("Location: /hiking-and-trails/signup.php?errors=Please Enter Both an Email and Password.");
+    }
+
+   $user = signUp($email, $password);
+}
+?>

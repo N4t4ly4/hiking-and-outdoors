@@ -1,9 +1,23 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-image: url("background5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+h1 {
+  color: Black;
+  text-align: center;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: gray;
   }
   
   li {
@@ -17,14 +31,14 @@ ul {
   
   li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
-    background-color: #111;
+  li a:hover {
+    background-color: #C0C0C0;
   }
   
   .active {
@@ -38,4 +52,18 @@ ul {
   table, tr, td {
       border: solid 1px black;
       border-collapse: collapse;
+      color: black;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: gray;
+      opacity: inherit;
+  }
+
+  .errors {
+    color: red;
+  }
+  .form-background {
+    background:rgba(0,0,0,0.5);
+    color: white;
   }

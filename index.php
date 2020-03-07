@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require('model/hikes_db.php');
+require('C:\xampp\htdocs\hiking-and-trails\model\hikes_db.php');
 
 $hikes = get_hikes();
 
@@ -48,7 +48,6 @@ $hikes = get_hikes();
          </tr>
        <?php endforeach; ?>
        </table>
-       <?php //var_dump($books); ?>
    </section>
 </body>
 </html>
